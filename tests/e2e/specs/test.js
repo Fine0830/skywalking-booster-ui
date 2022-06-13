@@ -17,7 +17,10 @@
 // https://docs.cypress.io/api/introduction/api.html
 
 describe("My First Test", () => {
-  it("Visits the app root url", () => {
-    cy.visit("/");
+  it("clicking", () => {
+    cy.visit(
+      "http://localhost:8080/dashboard/GENERAL/Service/YWdlbnQ6OnNvbmdz.1/General-Service"
+    );
+    cy.contains("Functions").click();
   });
 });

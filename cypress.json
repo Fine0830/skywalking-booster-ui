@@ -2,6 +2,7 @@
 {
   "pluginsFile": "tests/e2e/plugins/index.js",
   "env": {
-    "HTTP_PROXY": "http://demo.skywalking.apache.org/"
+    "HTTP_PROXY": "http://demo.skywalking.apache.org/",
+    "baseUrl": "http://localhost:3000"
   }
 }
