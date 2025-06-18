@@ -107,6 +107,19 @@ export default ({ mode }: ConfigEnv): UserConfig => {
               if (id.includes("d3")) {
                 return "d3";
               }
+              if (id.includes("vue")) {
+                return "vue";
+              }
+              if (id.includes("vis-timeline")) {
+                return "vis-timeline";
+              }
+              return "vendor";
+            }
+            if (id.includes("src/components")) {
+              return "components";
+            }
+            if (id.includes("src/views")) {
+              return "views";
             }
           },
         },
